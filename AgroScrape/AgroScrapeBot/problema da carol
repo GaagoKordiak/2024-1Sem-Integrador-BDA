@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    int maiorN = 0;
+    int posicao = 0;
+    int cont = 1;
+
+    do {
+        cin >> n;
+        if (cont == 1 || n > maiorN) {
+            maiorN = n;
+            posicao = cont;
+        }
+        cont++;
+    } while (cont <= 100);
+
+    cout << maiorN << endl;
+    cout << posicao << endl;
+
+    return 0;
+}
